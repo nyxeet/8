@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--primary-text-color);
+}
+a {
+  text-decoration: none;
+}
+/* Утилиты */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
