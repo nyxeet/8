@@ -1,0 +1,37 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.border-hidden {
+  border-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+  }
+  .nav-flex {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-flex {
+    height: 80px;
+  }
+}

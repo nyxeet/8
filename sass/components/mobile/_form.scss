@@ -1,6 +1,5 @@
 .form {
-  width: 528px;
-  height: 581px;
+  padding: 40px;
   position: relative;
   padding: 40px;
   h2 {
@@ -8,10 +7,13 @@
     margin-bottom: 12px;
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 23px;
   }
 }
 .form-field {
@@ -102,14 +104,13 @@
 }
 
 .checkbox-icon {
-  margin-right: 7px;
   left: 0;
-  width: 16px;
-  height: 15px;
-  background-image: url('../img/checkbox-off.svg');
+  min-width: 16px;
+  min-height: 15px;
+  background-image: url("../img/checkbox-off.svg");
   border-radius: 2px;
   .checkbox-form:checked ~ & {
-    background-image: url('../img/check-on.svg');
+    background-image: url("../img/check-on.svg");
     border-color: #2196f3;
     background-size: contain;
     background-origin: border-box;
@@ -117,14 +118,18 @@
 }
 .policy {
   margin: 0;
+  margin-left: 7px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
   .policy-k {
     text-decoration: underline;
     color: $accent-color;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 
