@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header class="header border-hidden">
@@ -168,19 +162,19 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="examples-list list">
             <li class="examples-item">
-              <img src="./img/example1.jpg" alt=""  width="370" height="294" />
+              <img src="./img/examples/example-1.jpg" srcset="./img/examples/example-1.jpg 1x, ./img/examples/example-1-2x.jpg 2x" alt=""  width="370" height="294" />
               <div class="examples-decor">
                 Десктопные приложения
               </div>
             </li>
             <li class="examples-item">
-              <img src="./img/example2.jpg" alt="" width="370" height="294" />
+              <img src="./img/examples/example-2.jpg" srcset="./img/examples/example-2.jpg 1x, ./img/examples/example-2-2x.jpg 2x" alt="" width="370" height="294" />
               <div class="examples-decor">
                 Мобильные приложения
               </div>
             </li>
             <li class="examples-item">
-              <img src="./img/example3.jpg" alt="" width="370" height="294" />
+              <img src="./img/examples/example-3.jpg" srcset="./img/examples/example-3.jpg 1x, ./img/examples/example-3-2x.jpg 2x" alt="" width="370" height="294" />
               <div class="examples-decor">
                 Дизайнерские решения
               </div>
@@ -194,7 +188,13 @@
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list list">
               <li class="team-item">
-                <img src="./img/emp1.jpg" class="team-image" alt="" width="270" height="260" />
+                <picture>
+                  <source srcset="./img/emp/mobile-first-emp.webp 1x, ./img/emp/mobile-first-emp-x2.webp 2x" type="image/webp" media="(max-width:767px)" />
+                  <source srcset="./img/emp/mobile-first-emp.jpg 1x, ./img/emp/mobile-first-emp-x2.jpg 2x" media="(max-width:767px)"/>
+                  <source srcset="./img/emp/tablet-first-emp.jpg 1x, ./img/emp/tablet-first-emp-x2.jpg 2x" media="(min-width:768px) and (max-width:1199px)" />
+                  <source srcset="./img/emp/emp1.jpg" media="(min-width:1200px)" />
+                  <img src="./img/emp1.jpg" class="team-image" alt="" width="270" height="260" />
+                </picture>
                 <h3 class="name">Игорь Демьяненко</h3>
                 <p class="role">Product Designer</p>
                 <ul class="actions">
@@ -229,7 +229,12 @@
                 </ul>
               </li>
               <li class="team-item">
-                <img src="./img/emp2.jpg" class="team-image" alt="" width="270" height="260" />
+                <picture>
+                  <source srcset="./img/emp/mobile-second-emp.jpg 1x, ./img/emp/mobile-second-emp-x2.jpg 2x" media="(max-width:767px)" />
+                  <source srcset="./img/emp/tablet-second-emp.jpg 1x, ./img/emp/tablet-second-emp-x2.jpg 2x" media="(min-width:768px) and (max-width:1199px)" />
+                  <source srcset="./img/emp/emp2.jpg" media="(min-width:1200px)" />
+                  <img src="./img/emp2.jpg" class="team-image" alt="" width="270" height="260" />
+                </picture>
                 <h3 class="name">Ольга Репина</h3>
                 <p class="role">Frontend Developer</p>
                 <ul class="actions">
@@ -264,7 +269,14 @@
                 </ul>
               </li>
               <li class="team-item">
-                <img src="./img/emp3.jpg" class="team-image" alt="" width="270" height="260" />
+                <picture>
+                  <source srcset="./img/emp/mobile-third-emp.jpg 1x, ./img/emp/mobile-third-emp-x2.jpg 2x"
+                    media="(max-width:767px)" />
+                  <source srcset="./img/emp/tablet-third-emp.jpg 1x, ./img/emp/tablet-third-emp-x2.jpg 2x"
+                    media="(min-width:768px) and (max-width:1199px)" />
+                  <source srcset="./img/emp/emp3.jpg" media="(min-width:1200px)" />
+                  <img src="./img/emp3.jpg" class="team-image" alt="" width="270" height="260" />
+                </picture>
                 <h3 class="name">Николай Тарасов</h3>
                 <p class="role">Marketing</p>
                 <ul class="actions">
@@ -299,7 +311,13 @@
                 </ul>
               </li>
               <li class="team-item">
-                <img src="./img/emp4.jpg" class="team-image" alt="" width="270" height="260" />
+                <picture>
+                  <source srcset="./img/emp/mobile-fourth-emp.jpg 1x, ./img/emp/mobile-fourth-emp-x2.jpg 2x" media="(max-width:767px)" />
+                  <source srcset="./img/emp/tablet-fourth-emp.jpg 1x, ./img/emp/tablet-fourth-emp-x2.jpg 2x"
+                    media="(min-width:768px) and (max-width:1199px)" />
+                  <source srcset="./img/emp/emp4.jpg" media="(min-width:1200px)" />
+                  <img src="./img/emp4.jpg" class="team-image" alt="" width="270" height="260" />
+                </picture>
                 <h3 class="name">Михаил Ермаков</h3>
                 <p class="role">UI Designer</p>
                 <ul class="actions">
