@@ -23,7 +23,6 @@
   width: calc(100vw - 30px);
   max-width: 450px;
   min-height: 609px;
-  overflow: auto;
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,8 +32,7 @@
   @media screen and (min-width: 1200px) {
     width: 528px;
     max-width: 528px;
-    min-height: 581px;
-    height: 581px;
+    height: 617px;
   }
   &-relative {
     position: relative;

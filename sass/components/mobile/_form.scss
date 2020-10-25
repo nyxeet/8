@@ -107,10 +107,10 @@
   left: 0;
   min-width: 16px;
   min-height: 15px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url('../img/checkbox-off.svg');
   border-radius: 2px;
   .checkbox-form:checked ~ & {
-    background-image: url("../img/check-on.svg");
+    background-image: url('../img/check-on.svg');
     border-color: #2196f3;
     background-size: contain;
     background-origin: border-box;
